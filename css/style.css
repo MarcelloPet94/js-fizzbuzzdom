@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    margin: 8px;
+}
+
+.noMultiple {
+    border: 2px solid burlywood;
+}
+
+.fizzBuzz {background-color: greenyellow;}
+.fizz {background-color:coral}
+.buzz {background-color: cornflowerblue;}
