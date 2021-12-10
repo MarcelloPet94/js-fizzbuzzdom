@@ -2,8 +2,15 @@
 const el = document.getElementById("el");
 
 
-
 for(let i = 1; i <= 100; i++) { 
+
+// numerazione
+let number = `<p>${i}</p>`;
+
+//etichette
+let a = "Fizz";
+let b = "Buzz";
+let c = "FizzBuzz";
 
 // condizioni
 let multThree = i % 3 == 0;
@@ -14,20 +21,18 @@ let both = i % 3 == 0 && i % 5 == 0;
     {
         el.innerHTML += `
         <div class="box fizzBuzz">
-        <p>${i}FizzBuzz</p>
+        ${number + c}
         </div>
         `;
-        console.log('FizzBuzz');
     }
 
     else if(multThree == true)
     {
         el.innerHTML += `
         <div class="box fizz">
-        <p>${i}Fizz</p>
+        ${number + a}
         </div>
         `;
-        console.log('Fizz');
 
     }
 
@@ -35,11 +40,9 @@ let both = i % 3 == 0 && i % 5 == 0;
     {
         el.innerHTML += `
         <div class="box buzz">
-        <p>${i}Buzz</p>
+        ${number + b}
         </div>
         `;
-        console.log('FizzBuzz');
-        console.log('Buzz');
     }
 
     else
