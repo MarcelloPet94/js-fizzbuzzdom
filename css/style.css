@@ -4,12 +4,27 @@
     box-sizing: border-box;
 }
 
+.layout {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    background-color:lightblue;
+}
+
+.layout > button {
+    margin: 8px;
+    width: 100px;
+    padding: 8px 0;
+}
+
 .container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
-    width: 80%;
+    transition: width .5s;
 }
 
 .container > div {
