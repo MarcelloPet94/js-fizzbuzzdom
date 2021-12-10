@@ -1,10 +1,16 @@
+// container tabella
 const el = document.getElementById("el");
+
 
 
 for(let i = 1; i <= 100; i++) { 
 
+// condizioni
+let multThree = i % 3 == 0;
+let multFive = i % 5 == 0;
+let both = i % 3 == 0 && i % 5 == 0;
 
-    if(i % 3 == 0 && i % 5 == 0)
+    if(both == true)
     {
         el.innerHTML += `
         <div class="box fizzBuzz">
@@ -14,7 +20,7 @@ for(let i = 1; i <= 100; i++) {
         console.log('FizzBuzz');
     }
 
-    else if(i % 3 == 0)
+    else if(multThree == true)
     {
         el.innerHTML += `
         <div class="box fizz">
@@ -25,7 +31,7 @@ for(let i = 1; i <= 100; i++) {
 
     }
 
-    else if(i % 5 == 0)
+    else if(multFive == true)
     {
         el.innerHTML += `
         <div class="box buzz">
